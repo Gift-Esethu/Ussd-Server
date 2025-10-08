@@ -1,4 +1,3 @@
-
 # Ubuntu Wallet USSD Server
 
 This is a prototype USSD server for the Ubuntu Wallet project. It handles registration, balance checks, sending money, and voucher cash-in with OTP.
@@ -38,16 +37,16 @@ This is a prototype USSD server for the Ubuntu Wallet project. It handles regist
 - **USSD**: Configure your USSD gateway to post session data (`sessionId`, `serviceCode`, `phoneNumber`, `text`) to `/ussd`. The server will respond with USSD menus.
 - **Voucher creation**: Use the admin endpoint to create vouchers:
 
-   ```
-   POST /admin/voucher
-   Body: { "code": "VOUCHER123", "amount": 100 }
-   ```
+  ```
+  POST /admin/voucher
+  Body: { "code": "VOUCHER123", "amount": 100 }
+  ```
 
 - **Status**: Check server status:
 
-   ```
-   GET /status
-   ```
+  ```
+  GET /status
+  ```
 
 ## Notes
 
